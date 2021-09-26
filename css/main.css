@@ -134,7 +134,7 @@ body {
 
 .blok__call {
     background: #fff;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 2px 8px 3px 8px;
     border-radius: 0.3rem;
     border: 0.0625rem solid #EDEDED;
     margin-right: 7.34rem;
@@ -166,7 +166,7 @@ body {
     border-color: #fff;
     background: #A3CC40;
     border: 0.125rem solid #EAEDE2;
-    padding: 0.0625rem 0.4375rem;
+    padding: 1px 7px 2px 7px
 }
 
 .blok__call:hover path {
@@ -329,7 +329,6 @@ body {
 
 .why_card_text {
     width: 15.3125rem;
-    height: 5.1875rem;
     margin: 2.39rem 0;
     text-align: Center;
     font-weight: 600;
@@ -488,9 +487,8 @@ table td {
 .present__imbem {
     height: 17.30rem;
     width: 17.29rem;
-    position: relative;
+    position: absolute;
     border-radius: 100%;
-    top: 136.6rem;
     left: 30.30rem;
 }
 
@@ -547,10 +545,6 @@ table td {
 .film__img .film__p {
     transition: 0.3s;
     left: 0;
-}
-
-.film__box {
-    margin-left: -2.5625rem;
 }
 
 .cinema__heading {
@@ -928,7 +922,6 @@ form {
     outline: none;
     transition: 0.5s;
     background: none;
-    border: none;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -943,6 +936,7 @@ form {
     border: 0.1875rem solid #AAF34D85;
     background: #fff;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 .comment {
@@ -956,12 +950,6 @@ form {
 .wrap {
     max-width: 18.75rem;
     margin: 1.875rem;
-}
-
-.full_name:hover {
-    border: 0.1875rem solid #AAF34D85;
-    background: #fff;
-    transition: 0.5s;
 }
 
 .email {
@@ -978,14 +966,13 @@ form {
 .full_name {
     color: #A1A1A1;
     width: 19.625rem;
-    height: 2.5rem;
+    height: 2.2rem;
     outline: none;
     background: #DEDEDE;
     border: 0.1875rem solid transparent;
     border-radius: 0.3125rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    padding-bottom: 0.1rem;
     margin-top: 1.875rem;
     display: flex;
     align-items: flex-start;
@@ -996,8 +983,46 @@ form {
     line-height: 1.1875rem;
 }
 
+.full_name:hover {
+    border: 0.1875rem solid #AAF34D85;
+    background: #fff;
+    transition: 0.5s;
+}
+
 .full_name::placeholder {
     color: #A1A1A1;
+}
+
+.wrap{
+    max-width: 300px;
+    margin: 300px;
+}
+
+.input {
+    position: relative;
+    background: #DEDEDE;
+    border-radius: 5px;
+    display: block;
+}
+
+.input__input{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 20px 12px;
+}
+
+.input__label{
+    position: absolute;
+    line-height: 19px;
+    color: #A1A1A1;
+    top: 20px;
+    left: 25px;
+}
+
+.input_filled .input__label {
+    top: -5px;
 }
 
 .full_name2 {
@@ -1052,6 +1077,7 @@ form {
     line-height: 0.8125rem;
     position: absolute;
     margin-top: 0.8125rem;
+    border-radius: 6px;
 }
 
 .chek__box input {
@@ -1077,6 +1103,7 @@ form {
     top: 0;
     bottom: 0;
     margin: auto;
+    border-radius: 6px;
 }
 
 /* Обратная связь  end*/
@@ -1116,7 +1143,7 @@ form {
 }
 
 .footer__content {
-    margin: 17.3rem 0 0 -10.30rem;
+    margin: 17.3rem 0 0;
 }
 
 .text2 {
